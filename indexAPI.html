@@ -1,0 +1,26 @@
+<html>
+
+<head>
+
+</head>
+<script>
+ // fetch('https://api.seatgeek.com/2/events?client_id=MTg3MDU3MTR8MTU3MDAyOTc3OC42Mg')
+  
+  fetch('https://private-anon-23dd58187d-eventbriteapiv3public.apiary-mock.com/v3/events/search/', {
+    headers: {
+      'Authorization': 'Bearer XXG6QSWVSSSGHEBRCZ'
+    }
+  }).then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        console.log(data.events[0].description);
+    })
+</script>
+
+<body>
+  <h1>Here is my API information:</h1>
+  <p id="api"></p>
+</body>
+
+</html>
