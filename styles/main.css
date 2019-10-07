@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'League Spartan';
+  src: url('/assets/LeagueSpartanVariable.woff2') format('woff2');
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -31,6 +36,8 @@ dd {
 
 /* Set core body defaults */
 body {
+  font-family: 'League Spartan','Segoe UI', Tahoma, sans-serif;
+  /* font-variation-settings: 'wght' 689; */
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -73,6 +80,8 @@ select {
 =============================================================
 */
 
+
+
 .page__header {
   background: black;
   color: white;
@@ -89,6 +98,8 @@ select {
 .page__header-title {
   display: inline-block;
   font-size: calc(4em + 3vw);
+  font-family: 'League Spartan','Segoe UI', Tahoma, sans-serif;
+  font-variation-settings: 'wght' 772;
 }
 
 .header__word {
@@ -111,5 +122,13 @@ select {
 #bar--first,
 #bar--second {
   flex: 2 0 30vw;
+}
+
+#bar--first {
+  margin-right: .13em;
+}
+
+#bar--second {
+  margin-left: .13em;
 }
 
