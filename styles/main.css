@@ -124,6 +124,10 @@ select {
   flex: 2 0 30vw;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 86Hydrant-add-css
 #bar--first {
   margin-right: .13em;
 }
@@ -181,4 +185,8 @@ select {
  background-size:100% 2px ; /*Setting the height of the lines, and a 100% width so it fills up its container*/
 }
 
+<<<<<<< HEAD
 /* Band list CSS ends*/
+=======
+/* Band list CSS ends*/
+>>>>>>> 86Hydrant-add-css
