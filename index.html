@@ -1,26 +1,41 @@
-<html>
-
-<head>
-
-</head>
-<script>
- // fetch('https://api.seatgeek.com/2/events?client_id=MTg3MDU3MTR8MTU3MDAyOTc3OC42Mg')
-  
-  fetch('https://www.eventbriteapi.com/v3/events/search', {
-    headers: {
-      'Authorization': 'Bearer XXG6QSWVSSSGHEBRCZ'
-    }
-  }).then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        console.log(data.events[0].description);
-    })
-</script>
-
-<body>
-  <h1>Here is my API information:</h1>
-  <p id="api"></p>
-</body>
-
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="page__header">
+      <h1 class="page__header-title">
+        <!-- first header word -->
+        <div class="header__word" id="word--first">
+          <!-- first color bar -->
+          <div class="header__bar" id="bar--first"></div>
+          <span>live </span> 
+        </div>
+        <!-- second header word -->
+        <div class="header__word" id="word--second">
+          <span>tonight</span>
+          <!-- second color bar -->
+          <div class="header__bar" id="bar--second"></div>
+        </div>
+      </h1>
+    
+    </header>
+    <main>
+      <ul>
+        <li><h2>Ty Segall</h2> 
+          <p>(USA) 21:00 @ Spaceland
+          fuzzy melodic guitar
+        </p>
+        </li>
+        <li><h2>Oh Sees</h2></li>
+        <li><h2>Chopin</h2></li>
+        <li><h2>Kendrick Lamar</h2></li>
+        <li><h2>Fuzz</h2></li>
+      </ul>
+    </main>
+  </body>
 </html>
