@@ -132,3 +132,53 @@ select {
   margin-left: .13em;
 }
 
+/* CSS for the band list */
+
+.band-section {
+  width: 44vw;
+  position: absolute;
+  top: 40%;
+  left: calc(50% - 22vw);
+}
+
+.band-section ul {
+  font-size: 25px;
+  list-style-type: none;
+  margin-left: 1.7em;
+  margin-right: 1.7em;
+  text-align: center;
+
+}
+
+.band-section ul li {
+  padding: 0.7em 0.5em 0.2em 0.5em;
+  /*border-bottom: 0.1em solid #FFAB6D; --this was the previous underline for the band names*/
+  font-weight: 600;
+  color: #eee;
+}
+
+.band-section ul li p {
+  font-size: 20px;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin-bottom: 2px;
+  font-weight: 400;
+  font-style: italic;
+  color: #eee;
+  background: /* making gradient underlines */
+   linear-gradient(
+     to left,
+     #121212 0%,
+     #FFAB6D 30%,
+     #FFAB6D 60%,
+     #121212 100%
+   )
+   left
+   bottom
+   #121212
+   no-repeat;
+
+ background-size:100% 2px ; /*Setting the height of the lines, and a 100% width so it fills up its container*/
+}
+
+/* Band list CSS ends*/
