@@ -10,8 +10,8 @@ fetch ("https://www.eventbriteapi.com/v3/events/search/?sort_by=distance&locatio
     response.events.forEach(function(event) {
         html = `
         <li class="band-item">
-            <h2>${event.name.text}<br>
-            <p>O${event.time}<p>
+            ${event.name.text}<br>
+            ${event.start.local}
         </li>`;
         document.getElementById("result").innerHTML = document.getElementById("result").innerHTML + html;
     })

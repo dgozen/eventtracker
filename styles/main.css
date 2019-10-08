@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'League Spartan';
-  src: url('/assets/LeagueSpartanVariable.woff2') format('woff2');
+  src: url('LeagueSpartanVariable.woff2') format('woff2');
 }
 
 /* Box sizing rules */
@@ -34,10 +34,13 @@ dd {
   margin: 0;
 }
 
+html {
+  background-color: #191A1B;
+}
+
 /* Set core body defaults */
 body {
   font-family: 'League Spartan','Segoe UI', Tahoma, sans-serif;
-  /* font-variation-settings: 'wght' 689; */
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -80,10 +83,11 @@ select {
 =============================================================
 */
 
-
+main {
+  height: 100vh;
+}
 
 .page__header {
-  background: black;
   color: white;
   height: auto;
 }
@@ -124,10 +128,6 @@ select {
   flex: 2 0 30vw;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 86Hydrant-add-css
 #bar--first {
   margin-right: .13em;
 }
@@ -184,9 +184,3 @@ select {
 
  background-size:100% 2px ; /*Setting the height of the lines, and a 100% width so it fills up its container*/
 }
-
-<<<<<<< HEAD
-/* Band list CSS ends*/
-=======
-/* Band list CSS ends*/
->>>>>>> 86Hydrant-add-css
