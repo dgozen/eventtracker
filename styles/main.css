@@ -159,7 +159,7 @@ main {
 .band-section {
   width: 44vw;
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: calc(50% - 22vw);
 }
 
